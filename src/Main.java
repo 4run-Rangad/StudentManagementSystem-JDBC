@@ -4,9 +4,18 @@ import model.Student;
 public class Main {
     public static void main(String[] args){
        StudentDAO dao = new StudentDAO();
-       Student s1 = new Student("Rahul" , "rahul@gmail.com", "MCA", 85);
-       Student s2 = new Student("Ajay" , "ajay@gmail.com", "MCA", 79);
-       dao.addStudent(s2);
-
+//       Student s1 = new Student("Rahul" , "rahul@gmail.com", "MCA", 85);
+//       Student s2 = new Student("Ajay" , "ajay@gmail.com", "MCA", 79);
+//       dao.addStudent(s2);
+        //View
+        dao.getAllStudents();
+        //Update
+        dao.updateMarks(1,70);
+        //view
+        dao.getAllStudents();
+        //delete
+        dao.deleteStudent(2);
+        //View again
+        dao.getAllStudents();
     }
 }
